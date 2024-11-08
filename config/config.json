@@ -1,0 +1,21 @@
+{
+  "request": {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "proxies": {
+      "http": "127.0.0.1:7890",
+      "https": "127.0.0.1:7890"
+    },
+    "cookie_file": "config/cookie",
+    "key": "f17e4808608ed5d09cbde2491b8c9999df4f3962"
+  },
+  "downloader": {
+    "path": "data"
+  },
+  "database": {
+    "engine": "mysql",
+    "database": "pixiv",
+    "host": "localhost",
+    "username": "skn_p",
+    "password": "skn"
+  }
+}
