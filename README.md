@@ -12,6 +12,14 @@ Pixiv 爬虫，可下载用户的插画，并提供简单分析功能。
 - provide CLI
 - ~~UI~~ (developing)
 
+## dependencies
+
+- MySQL
+
+```shell
+sudo apt install mysql-server
+```
+
 ## Install
 
 ### use poetry install and run
