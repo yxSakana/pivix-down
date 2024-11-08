@@ -1,24 +1,43 @@
-Pixiv下载器
+# Pixiv-Down
+
+---
 
 ## Overview
 
 Pixiv 爬虫，可下载用户的插画，并提供简单分析功能。
 
+---
+
 ## Features
 
-- search and download user
-- search and illust
-- search and novel
-- provide CLI
+- search and download user info, illust, novel, ~~manga~~
+- analyse illust and novel based on publication time, view count, favorites, word count.
+- CLI
 - ~~UI~~ (developing)
 
-## dependencies
+---
+
+## Dependencies
 
 - MySQL
 
 ```shell
 sudo apt install mysql-server
+
+mysql
 ```
+
+init database
+```mysql
+CREATE DATABASE pixiv;
+CREATE USER 'skn_p'@'localhost' IDENTIFIED BY "skn";
+GRANT ALL PRIVILEGES ON pixiv.* TO 'skn_p'@'localhost';
+    
+FLUSH PRIVILEGES;
+SHOW GRANTS FOR 'skn_p'@'localhost';
+```
+
+---
 
 ## Install
 
@@ -36,6 +55,8 @@ poetry install
 poetry shell
 pixiv_down --help
 ```
+
+---
 
 ## CLI
 
