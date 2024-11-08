@@ -12,6 +12,23 @@ Pixiv 爬虫，可下载用户的插画，并提供简单分析功能。
 - provide CLI
 - ~~UI~~ (developing)
 
+## Install
+
+### use poetry install and run
+
+```shell
+poetry install
+poetry run pixiv_down --help
+```
+
+### use poetry shell(virtual environment)
+
+```shell
+poetry install
+poetry shell
+pixiv_down --help
+```
+
 ## CLI
 
 ```shell
@@ -36,7 +53,7 @@ options:
 
 ### Options
 
-- config 配置文件在 `config/config.json` 文件中
+- config 配置文件在 `config/config.json` 文件中;请将`cookie`放到单独文件中, 如`config/cookie`中
 - search 搜索用户、插画、小说
 - download 下载插画、小说
 - scan 扫描用户的插画、小说，存储到数据库
