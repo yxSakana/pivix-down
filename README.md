@@ -70,9 +70,9 @@ usage: pixiv_down.py [-h] {config,search,download,scan,analyse,test} ...
 positional arguments:
   {config,search,download,scan,analyse,test}
     config              Configure pixiv_api
-    search              Search for illust or user
-    download            Download work or novel
-    scan                scan user illust or novel or manga or all work
+    search              Search for user/illust/novel
+    download            Download for user/illust/novel
+    scan                scan user illust/novel/manga/all work
     analyse             analyse data
     test                Test pixiv_api
 
@@ -97,7 +97,7 @@ options:
   -h, --help            show this help message and exit
   -t {illust,user,novel}, --type {illust,user,novel}
                         search by [illust, user, novel]
-  -i I                  url or uid
+  -i I                  url or id
 ```
 
 #### download
