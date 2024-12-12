@@ -103,8 +103,8 @@ class MySql(object):
                 title=res[2],
                 tags=res[3],
                 description=res[4],
-                images=res[5],
-                date=res[6],
+                images=res[5].split(",") if res[5] else None,
+                date=res[6].strftime("%Y-%m-%d %H:%M:%S"),
                 view_count=res[7],
                 bookmark_count=res[8],
                 page_count=res[9]

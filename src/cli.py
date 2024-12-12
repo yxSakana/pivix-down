@@ -95,21 +95,21 @@ def main():
     cli_config.add_argument("-p", "--proxy", type=str, help="Proxy [http;https]")
     cli_config.set_defaults(func=config)
     # search
-    cli_search = subparsers.add_parser('search', help='Search for illust or user')
+    cli_search = subparsers.add_parser('search', help='Search for user/illust/novel')
     cli_search.add_argument("-t", "--type",
                             type=str, choices=["illust", "user", "novel"], default="illust",
                             help="search by [illust, user, novel]")
-    cli_search.add_argument("-i", type=str, help="url or uid", required=True)
+    cli_search.add_argument("-i", type=str, help="url or id", required=True)
     cli_search.set_defaults(func=search)
     # download
-    cli_download = subparsers.add_parser('download', help='Download work or novel')
+    cli_download = subparsers.add_parser('download', help='Download for user/illust/novel')
     cli_download.add_argument("-t", "--type",
                               type=str, choices=["all", "illust", "novel"], default="illust",
                               help="search by [illust, user, novel]")
     cli_download.add_argument("-i", type=str, help="url or id", required=True)
     cli_download.set_defaults(func=download)
     # scan
-    cli_scan = subparsers.add_parser('scan', help='scan user illust or novel or manga or all work')
+    cli_scan = subparsers.add_parser('scan', help='scan user illust/novel/manga/all work')
     cli_scan.add_argument("-u", "--uid", type=str, help="uid", required=True)
     cli_scan.add_argument("-t", "--type",
                           choices=["illust", "novel", "manga", "all"], default="novel")
